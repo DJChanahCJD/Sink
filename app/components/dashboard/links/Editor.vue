@@ -1,7 +1,7 @@
 <script setup>
 import { LinkSchema, nanoid } from '@@/schemas/link'
 import { toTypedSchema } from '@vee-validate/zod'
-import { Shuffle, Sparkles } from 'lucide-vue-next'
+import { Shuffle, Sparkles, Plus } from 'lucide-vue-next'
 import { useForm } from 'vee-validate'
 import { toast } from 'vue-sonner'
 import { z } from 'zod'
@@ -136,7 +136,7 @@ const { previewMode } = useRuntimeConfig().public
           variant="outline"
           @click="randomSlug"
         >
-          {{ $t('links.create') }}
+          <Plus class="h-4 w-4 sm:mr-2" />{{ $t('links.create') }}
         </Button>
       </slot>
     </DialogTrigger>
