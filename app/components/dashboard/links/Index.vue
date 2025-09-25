@@ -77,10 +77,10 @@ function updateLinkList(link, type) {
   <main class="space-y-6">
     <div class="flex flex-col gap-6 sm:gap-2 sm:flex-row sm:justify-between">
       <div class="flex items-center gap-2">
-        <DashboardLinksEditor @update:link="updateLinkList" />
+        <LazyDashboardLinksSearch />
         <DashboardLinksSort v-model:sort-by="sortBy" />
       </div>
-      <LazyDashboardLinksSearch />
+      <DashboardLinksEditor @update:link="updateLinkList" />
     </div>
     <section class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       <DashboardLinksLink
