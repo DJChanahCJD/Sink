@@ -6,7 +6,7 @@
     "binding": "ASSETS",
     "directory": "dist/public"
   },
-  "compatibility_date": "2025-05-08",
+  "compatibility_date": "2024-04-03",
   "compatibility_flags": [
     "nodejs_compat"
   ],
@@ -24,7 +24,7 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "id": "ef93d42dc4b34969bab404d2e80f8dd3" // IMPORTANT: Change this to your KV namespace ID
+      "id": "d3aff68ce79748e1a73bc8a8fed0a41d" // IMPORTANT: Change this to your KV namespace ID
     }
   ]
 }
